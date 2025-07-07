@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "simple-blog-platform.fullname" . }}-config
+  labels:
+    {{- include "simple-blog-platform.labels" . | nindent 4 }}
+data:
+  apiKey: {{ .Values.config.apiKey | quote }}
