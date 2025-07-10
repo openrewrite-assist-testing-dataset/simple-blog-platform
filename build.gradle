@@ -17,11 +17,11 @@ repositories {
 }
 
 dependencies {
-    // Dropwizard 2.1.x (more compatible)
-    implementation 'io.dropwizard:dropwizard-core:2.1.12'
-    implementation 'io.dropwizard:dropwizard-auth:2.1.12'
-    implementation 'io.dropwizard:dropwizard-jdbi3:2.1.12'
-    implementation 'io.dropwizard:dropwizard-migrations:2.1.12'
+    // Dropwizard 3.0.x
+    implementation 'io.dropwizard:dropwizard-core:3.0.14'
+    implementation 'io.dropwizard:dropwizard-auth:3.0.14'
+    implementation 'io.dropwizard:dropwizard-jdbi3:3.0.14'
+    implementation 'io.dropwizard:dropwizard-migrations:3.0.14'
     
     // H2 Database
     implementation 'com.h2database:h2:2.1.214'
@@ -36,7 +36,7 @@ dependencies {
     
     // Testing - JUnit 4
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'io.dropwizard:dropwizard-testing:2.1.12'
+    testImplementation 'io.dropwizard:dropwizard-testing:3.0.14'
     testImplementation 'org.mockito:mockito-core:4.6.1'
     testImplementation 'org.assertj:assertj-core:3.23.1'
 }
