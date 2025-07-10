@@ -4,15 +4,15 @@ import com.example.blog.api.PostResource;
 import com.example.blog.auth.ApiKeyAuthenticator;
 import com.example.blog.auth.BlogPrincipal;
 import com.example.blog.db.PostDAO;
-import io.dropwizard.Application;
+import io.dropwizard.core.Application;
 import io.dropwizard.auth.AuthDynamicFeature;
 import io.dropwizard.auth.AuthValueFactoryProvider;
 import io.dropwizard.auth.basic.BasicCredentialAuthFilter;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.jdbi3.JdbiFactory;
 import io.dropwizard.migrations.MigrationsBundle;
-import io.dropwizard.setup.Bootstrap;
-import io.dropwizard.setup.Environment;
+import io.dropwizard.core.setup.Bootstrap;
+import io.dropwizard.core.setup.Environment;
 import org.jdbi.v3.core.Jdbi;
 
 public class BlogApplication extends Application<BlogConfiguration> {
